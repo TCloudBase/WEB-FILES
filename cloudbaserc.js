@@ -1,5 +1,5 @@
 module.exports = {
-  envId: "lgy-199ef6",
+  envId: "云开发环境ID",
   functionRoot: "./cloudfunctions/functions",
   functions: [
     {
