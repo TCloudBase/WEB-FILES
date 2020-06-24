@@ -15,8 +15,7 @@
  *  @param  {function} obj.success 成功回调
  *  @param  {function} obj.fail 失败回调
  *
- *  【工具】自制展示通知提示
- *  id需为myModal,并且需要添加全局变量【let modalFlag = false;】
+ *  【工具】自制展示通知提示 id需为myModal
  * @method showModel(text,time,type)
  * @param text 展示文字
  * @param time 展示时长
@@ -51,4 +50,179 @@
  * @param {function} obj.success 成功回调方法
  * @param {function} obj.fail 失败回调方法
  */
-function isWeClient(){let ua=window['\x6e\x61\x76\x69\x67\x61\x74\x6f\x72']['\x75\x73\x65\x72\x41\x67\x65\x6e\x74']['\x74\x6f\x4c\x6f\x77\x65\x72\x43\x61\x73\x65']();console['\x6c\x6f\x67'](ua);if(ua['\x6d\x61\x74\x63\x68'](/MicroMessenger/i)=='\x6d\x69\x63\x72\x6f\x6d\x65\x73\x73\x65\x6e\x67\x65\x72'){return true}else{return false}}function downLoad(url,CcA1){let link=window["\x64\x6f\x63\x75\x6d\x65\x6e\x74"]['\x63\x72\x65\x61\x74\x65\x45\x6c\x65\x6d\x65\x6e\x74']('\x61');let body=window["\x64\x6f\x63\x75\x6d\x65\x6e\x74"]['\x71\x75\x65\x72\x79\x53\x65\x6c\x65\x63\x74\x6f\x72']('\x62\x6f\x64\x79');link['\x68\x72\x65\x66']=encodeURI(url);link['\x64\x6f\x77\x6e\x6c\x6f\x61\x64']=CcA1;link['\x73\x74\x79\x6c\x65']['\x64\x69\x73\x70\x6c\x61\x79']='\x6e\x6f\x6e\x65';body['\x61\x70\x70\x65\x6e\x64\x43\x68\x69\x6c\x64'](link);link['\x63\x6c\x69\x63\x6b']();body['\x72\x65\x6d\x6f\x76\x65\x43\x68\x69\x6c\x64'](link)}function calls(NCry2){let xml=new XMLHttpRequest();xml['\x6f\x70\x65\x6e']("\x50\x4f\x53\x54",NCry2['\x75\x72\x6c'],true);xml['\x73\x65\x74\x52\x65\x71\x75\x65\x73\x74\x48\x65\x61\x64\x65\x72']("\x43\x6f\x6e\x74\x65\x6e\x74\x2d\x74\x79\x70\x65","\x61\x70\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x2f\x6a\x73\x6f\x6e");xml['\x73\x65\x6e\x64'](JSON['\x73\x74\x72\x69\x6e\x67\x69\x66\x79'](NCry2['\x64\x61\x74\x61']));xml['\x72\x65\x73\x70\x6f\x6e\x73\x65\x54\x79\x70\x65']='\x74\x65\x78\x74';xml['\x6f\x6e\x72\x65\x61\x64\x79\x73\x74\x61\x74\x65\x63\x68\x61\x6e\x67\x65']=function(){if(xml['\x72\x65\x61\x64\x79\x53\x74\x61\x74\x65']===4&&xml['\x73\x74\x61\x74\x75\x73']===200){NCry2['\x73\x75\x63\x63\x65\x73\x73'](JSON['\x70\x61\x72\x73\x65'](xml['\x72\x65\x73\x70\x6f\x6e\x73\x65\x54\x65\x78\x74']))}else{NCry2['\x66\x61\x69\x6c'](xml['\x73\x74\x61\x74\x75\x73'])}}}function showModel(text,leGfwS3,NSdrpcVV4){window["\x64\x6f\x63\x75\x6d\x65\x6e\x74"]['\x67\x65\x74\x45\x6c\x65\x6d\x65\x6e\x74\x42\x79\x49\x64']('\x6d\x79\x4d\x6f\x64\x61\x6c')['\x69\x6e\x6e\x65\x72\x54\x65\x78\x74']=text;let types=['\x65\x72\x72\x6f\x72','\x77\x61\x72\x6e\x69\x6e\x67','\x73\x75\x63\x63\x65\x73\x73','\x6e\x6f\x53\x68\x6f\x77'];types['\x73\x70\x6c\x69\x63\x65'](types['\x69\x6e\x64\x65\x78\x4f\x66'](NSdrpcVV4),1);editClass('\x6d\x79\x4d\x6f\x64\x61\x6c',{add:[NSdrpcVV4,'\x6e\x73\x2d\x73\x68\x6f\x77'],remove:types,style:''});if(modalFlag)clearTimeout(modalFlag);modalFlag=setTimeout(function(){editClass('\x6d\x79\x4d\x6f\x64\x61\x6c',{add:['\x6e\x73\x2d\x68\x69\x64\x65'],remove:['\x6e\x73\x2d\x73\x68\x6f\x77'],style:''});setTimeout(function(){editClass('\x6d\x79\x4d\x6f\x64\x61\x6c',{add:['\x6e\x6f\x53\x68\x6f\x77'],remove:[NSdrpcVV4,'\x6e\x73\x2d\x68\x69\x64\x65'],style:''})},400)},leGfwS3)}function toShow(SoIq5){for(let i of SoIq5){window["\x64\x6f\x63\x75\x6d\x65\x6e\x74"]['\x67\x65\x74\x45\x6c\x65\x6d\x65\x6e\x74\x42\x79\x49\x64'](i)['\x63\x6c\x61\x73\x73\x4c\x69\x73\x74']['\x72\x65\x6d\x6f\x76\x65']('\x6e\x6f\x53\x68\x6f\x77')}}function toHide(IwdwVw6){for(let i of IwdwVw6){window["\x64\x6f\x63\x75\x6d\x65\x6e\x74"]['\x67\x65\x74\x45\x6c\x65\x6d\x65\x6e\x74\x42\x79\x49\x64'](i)['\x63\x6c\x61\x73\x73\x4c\x69\x73\x74']['\x61\x64\x64']('\x6e\x6f\x53\x68\x6f\x77')}}function editClass(WKbe7,IpurXk$_8){let elm=window["\x64\x6f\x63\x75\x6d\x65\x6e\x74"]['\x67\x65\x74\x45\x6c\x65\x6d\x65\x6e\x74\x42\x79\x49\x64'](WKbe7);if(IpurXk$_8['\x61\x64\x64']!=null){for(let i of IpurXk$_8['\x61\x64\x64']){elm['\x63\x6c\x61\x73\x73\x4c\x69\x73\x74']['\x61\x64\x64'](i)}}if(IpurXk$_8['\x72\x65\x6d\x6f\x76\x65']!=null){for(let i of IpurXk$_8['\x72\x65\x6d\x6f\x76\x65']){elm['\x63\x6c\x61\x73\x73\x4c\x69\x73\x74']['\x72\x65\x6d\x6f\x76\x65'](i)}}if(IpurXk$_8['\x61\x64\x64\x54']!=null){for(let i of IpurXk$_8['\x61\x64\x64\x54']){elm['\x73\x65\x74\x41\x74\x74\x72\x69\x62\x75\x74\x65'](i['\x6e\x61\x6d\x65'],i['\x76\x61\x6c\x75\x65'])}}if(IpurXk$_8['\x72\x65\x6d\x6f\x76\x65\x54']!=null){for(let i of IpurXk$_8['\x72\x65\x6d\x6f\x76\x65\x54']){elm['\x72\x65\x6d\x6f\x76\x65\x41\x74\x74\x72\x69\x62\x75\x74\x65'](i)}}IpurXk$_8['\x73\x74\x79\x6c\x65']!=null?elm['\x73\x74\x79\x6c\x65']=IpurXk$_8['\x73\x74\x79\x6c\x65']:null;IpurXk$_8['\x74\x65\x78\x74']!=null?elm['\x69\x6e\x6e\x65\x72\x54\x65\x78\x74']=IpurXk$_8['\x74\x65\x78\x74']:null}function getElm(id){return window["\x64\x6f\x63\x75\x6d\x65\x6e\x74"]['\x67\x65\x74\x45\x6c\x65\x6d\x65\x6e\x74\x42\x79\x49\x64'](id)}function copyToClipboard($D9){if($D9['\x74\x65\x78\x74']['\x69\x6e\x64\x65\x78\x4f\x66']('\x2d')!==-1){let arr=$D9['\x74\x65\x78\x74']['\x73\x70\x6c\x69\x74']('\x2d');$D9['\x74\x65\x78\x74']=arr[0]+arr[1]}let textArea=window["\x64\x6f\x63\x75\x6d\x65\x6e\x74"]['\x63\x72\x65\x61\x74\x65\x45\x6c\x65\x6d\x65\x6e\x74']("\x74\x65\x78\x74\x61\x72\x65\x61");textArea['\x73\x74\x79\x6c\x65']['\x70\x6f\x73\x69\x74\x69\x6f\x6e']='\x66\x69\x78\x65\x64';textArea['\x73\x74\x79\x6c\x65']['\x74\x6f\x70']='\x30';textArea['\x73\x74\x79\x6c\x65']['\x6c\x65\x66\x74']='\x30';textArea['\x73\x74\x79\x6c\x65']['\x77\x69\x64\x74\x68']='\x32\x65\x6d';textArea['\x73\x74\x79\x6c\x65']['\x68\x65\x69\x67\x68\x74']='\x32\x65\x6d';textArea['\x73\x74\x79\x6c\x65']['\x70\x61\x64\x64\x69\x6e\x67']='\x30';textArea['\x73\x74\x79\x6c\x65']['\x62\x6f\x72\x64\x65\x72']='\x6e\x6f\x6e\x65';textArea['\x73\x74\x79\x6c\x65']['\x6f\x75\x74\x6c\x69\x6e\x65']='\x6e\x6f\x6e\x65';textArea['\x73\x74\x79\x6c\x65']['\x62\x6f\x78\x53\x68\x61\x64\x6f\x77']='\x6e\x6f\x6e\x65';textArea['\x73\x74\x79\x6c\x65']['\x62\x61\x63\x6b\x67\x72\x6f\x75\x6e\x64']='\x74\x72\x61\x6e\x73\x70\x61\x72\x65\x6e\x74';textArea['\x76\x61\x6c\x75\x65']=$D9['\x74\x65\x78\x74'];window["\x64\x6f\x63\x75\x6d\x65\x6e\x74"]['\x62\x6f\x64\x79']['\x61\x70\x70\x65\x6e\x64\x43\x68\x69\x6c\x64'](textArea);textArea['\x73\x65\x6c\x65\x63\x74']();try{let successful=window["\x64\x6f\x63\x75\x6d\x65\x6e\x74"]['\x65\x78\x65\x63\x43\x6f\x6d\x6d\x61\x6e\x64']('\x63\x6f\x70\x79');successful?($D9['\x73\x75\x63\x63\x65\x73\x73']!=null?$D9['\x73\x75\x63\x63\x65\x73\x73']():null):($D9['\x66\x61\x69\x6c']!=null?$D9['\x66\x61\x69\x6c']():null)}catch(err){$D9['\x66\x61\x69\x6c']!=null?$D9['\x66\x61\x69\x6c']():null}window["\x64\x6f\x63\x75\x6d\x65\x6e\x74"]['\x62\x6f\x64\x79']['\x72\x65\x6d\x6f\x76\x65\x43\x68\x69\x6c\x64'](textArea)}
+
+
+
+
+
+/**
+ * 【工具】判断是否属于微信浏览器
+ * @returns {boolean}
+ */
+function isWeClient() {
+    let ua = window.navigator.userAgent.toLowerCase();
+    console.log(ua);
+    if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+/**
+ * 【工具】下载文件（a标签方法）
+ * @param  url 目标文件地址
+ * @param  name 想要保存的文件名称
+ */
+function downLoad(url,name) {
+    let link = document.createElement('a');
+    let body = document.querySelector('body');
+    link.href = url;
+    link.download = name;
+    link.style.display = 'none';
+    body.appendChild(link);
+    link.click();
+    body.removeChild(link);
+}
+
+/**
+ * 【工具】封装的原生请求方法
+ *  @param  {string} obj.url 请求地址
+ *  @param  {json} obj.data 请求数据
+ *  @param  {function} obj.success 成功回调
+ *  @param  {function} obj.fail 失败回调
+ */
+function calls(obj) {
+    let xml=new XMLHttpRequest();
+    xml.open("POST",obj.url,true);
+    xml.setRequestHeader("Content-type","application/json");
+    xml.send(JSON.stringify(obj.data));
+    xml.responseType='text';
+    xml.onreadystatechange=function() {
+        if (xml.readyState === 4 && xml.status === 200) {
+            obj.success(JSON.parse(xml.responseText))
+        }
+        else{
+            obj.fail(xml.status);
+        }
+    }
+}
+
+/**
+ * 【工具】自制展示通知提示
+ * @param text 展示文字
+ * @param time 展示时长
+ * @param type 提示类型(error,warning,success)
+ */
+function showModel(text,time,type) {
+    document.getElementById('myModal').innerText=text;
+    let types = ['error','warning','success','noShow'];
+    types.splice(types.indexOf(type),1);
+    editClass('myModal',{
+        add:[type,'ns-show'],
+        remove:types,
+        style:''
+    });
+    if(modalFlag)clearTimeout(modalFlag);
+    modalFlag=setTimeout(function(){
+        editClass('myModal',{
+            add:['ns-hide'],
+            remove:['ns-show'],
+            style:''
+        });
+        setTimeout(function(){
+            editClass('myModal',{
+                add:['noShow'],
+                remove:[type,'ns-hide'],
+                style:''
+            });
+        },400);
+    },time);
+}
+
+/**
+ * 【工具】批量显示元素
+ * @param id 元素id数组
+ */
+function toShow(id) {
+    for(let i of id){
+        document.getElementById(i).classList.remove('noShow');
+    }
+}
+
+/**
+ * 【工具】批量隐藏元素
+ * @param id 元素id数组
+ */
+function toHide(id) {
+    for(let i of id){
+        document.getElementById(i).classList.add('noShow');
+    }
+}
+
+/**
+ * 【工具】编辑元素样式信息
+ * @param {string}id 元素id
+ * @param {array[string]}e.add 增加class的数组
+ * @param {array[string]}e.remove 删除class的数组
+ * @param {array[object]}e.addT 增加属性数组{name:'属性名',value:'属性值'}
+ * @param {array[string]}e.removeT 删除class的数组
+ * @param {string}e.style 直接内联样式
+ * @param {string}e.text 元素文字内容（不适合html元素）
+ */
+function editClass(id,e) {
+    let elm = document.getElementById(id);
+    if(e.add!=null) {
+        for (let i of e.add) {
+            elm.classList.add(i);
+        }
+    }
+    if(e.remove!=null){
+        for(let i of e.remove){
+            elm.classList.remove(i);
+        }
+    }
+    if(e.addT!=null){
+        for(let i of e.addT){
+            elm.setAttribute(i.name,i.value);
+        }
+    }
+    if(e.removeT!=null){
+        for(let i of e.removeT){
+            elm.removeAttribute(i);
+        }
+    }
+    e.style!=null?elm.style=e.style:null;
+    e.text!=null?elm.innerText=e.text:null;
+}
+
+/**
+ * 【工具】获得html元素
+ * @param {string}id 元素id
+ * @returns {HTMLElement}
+ */
+function getElm(id) {
+    return document.getElementById(id);
+}
+
+/**
+ * 【工具】复制文字到剪切板
+ * @param {string} obj.text 复制的文字
+ * @param {function} obj.success 成功回调方法
+ * @param {function} obj.fail 失败回调方法
+ */
+function copyToClipboard(obj) {
+                try {
+                    var text=obj.text;
+                    var Input = document.createElement('input');
+                    Input.value = text;
+                    document.body.appendChild(Input);
+                    Input.select(); // 选择对象
+                    document.execCommand("Copy"); // 执行浏览器复制命令
+                    Input.style.display='none';
+                    obj.success!=null?obj.success():null;
+                } catch (err) {
+                    obj.fail!=null?obj.fail():null;
+                }
+                document.body.removeChild(Input);
+            }
