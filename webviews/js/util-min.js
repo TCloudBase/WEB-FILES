@@ -214,7 +214,7 @@ function getElm(id) {
 function copyToClipboard(obj) {
                 try {
                     var text=obj.text;
-                    var Input = document.createElement('input');
+                    var Input = document.createElement('textarea');
                     Input.value = text;
                     document.body.appendChild(Input);
                     Input.select(); // 选择对象
